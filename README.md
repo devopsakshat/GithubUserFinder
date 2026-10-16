@@ -1,22 +1,41 @@
-# GitHub User Finder
+#GitHub User Finder
 
-This is the GitHub User Finder frontend with a small Express server.
+A simple GitHub User Finder built with HTML, CSS, JavaScript, and Express.js. Search for GitHub users and explore their profiles, bios, followers, and public repositories.
 
-## Run it
+Live Demo: https://github-user-finder-mu-blush.vercel.app
 
-1. Open this folder in VS Code.
-2. Run `npm.cmd install` in the terminal.
-3. Optional: copy `.env.example` to `.env` and add your new GitHub token.
-4. Run `npm.cmd start`.
-5. Open http://localhost:2000.
+Features
 
-Use the local URL above instead of opening `index.html` directly.
+Search for GitHub users
 
-## Routes
+View profile information and avatars
 
-- `/api/github/search?q=octocat` searches GitHub users.
-- `/api/github/users/octocat` gets one user's profile.
+Display follower and public repository counts
 
-The frontend calls these Express routes. Express calls GitHub and sends the response back.
+Express.js backend for GitHub API requests
 
-If the PAT you uploaded was real, revoke it in GitHub and create a new one. Keep the new token in `.env`, not in `main.js`. Do not upload `.env` to GitHub.
+Responsive layout for desktop, tablet, and mobile
+
+Tech Stack
+
+HTML, CSS, JavaScript
+
+Node.js and Express.js
+
+GitHub REST API
+
+Vercel
+
+Run Locally
+
+Clone this repository.
+
+Run npm install.
+
+Create a .env file and add your GITHUB_TOKEN if needed.
+
+Run npm start.
+
+Open http://localhost:2000.
+
+Never commit your .env file or GitHub token.
