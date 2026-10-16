@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#101116" />
+    <title>GitHub User Finder</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <main class="container">
+      <header class="header">
+        <a href="#" class="brand">
+          <span class="brand-icon">GH</span>
+          <span>user<span class="brand-accent">finder</span></span>
+        </a>
+
+        <span class="header-label">
+          <span class="status-dot"></span>
+          GitHub Explorer
+        </span>
+      </header>
+
+      <section class="hero">
+        <span class="eyebrow">DEVELOPER DIRECTORY</span>
+
+        <h1>
+          Find your next<br />
+          <span class="gradient-text">GitHub profile.</span>
+        </h1>
+
+        <p class="hero-description">
+          Discover developers, explore their profiles, and find people building
+          cool things.
+        </p>
+
+        <form class="search-box">
+          <span class="search-icon" aria-hidden="true">⌕</span>
+
+          <input
+            type="text"
+            class="search-input"
+            placeholder="Search GitHub users..."
+            aria-label="Search GitHub users"
+            autocomplete="off"
+          />
+
+          <button type="submit" class="search-btn">
+            Search
+            <span aria-hidden="true">→</span>
+          </button>
+        </form>
+
+        <p class="search-hint">
+          <span>TIP</span>
+          Try a name like "Akshat Kumar" to discover matching profiles.
+        </p>
+      </section>
+
+      <section class="results-section">
+        <div class="results-header">
+          <div>
+            <h2>Search results</h2>
+            <p class="results-subtitle">
+              Explore developers from around the world.
+            </p>
+          </div>
+
+          <span class="results-count">PROFILES</span>
+        </div>
+
+        <p class="message" aria-live="polite"></p>
+
+        <div class="user-grid">
+          <!-- Example card: use as a reference for your JS -->
+          <template id="user-card-template">
+            <article class="user-card">
+              <div class="card-top">
+                <span class="profile-label">GITHUB USER</span>
+                <span class="external-icon" aria-hidden="true">↗</span>
+              </div>
+
+              <div class="profile-main">
+                <img
+                  class="avatar"
+                  src="https://placehold.co/100x100/24283b/a9b1d6?text=AK"
+                  alt="Example developer avatar"
+                />
+
+                <div class="profile-details">
+                  <h3 class="login">Akshat Kumar</h3>
+                  <p class="user-name">@akshat-dev</p>
+                </div>
+              </div>
+
+              <p class="bio">
+                Building projects, exploring code, and learning something new
+                every day.
+              </p>
+
+              <div class="profile-stats">
+                <div class="stat">
+                  <span class="stat-value repo-count">
+                    <span aria-hidden="true">★</span>
+                    <span class="repo-number">24</span>
+                  </span>
+                  <span class="stat-label">Repositories</span>
+                </div>
+
+                <div class="stat">
+                  <span class="stat-value follower-count">
+                    <span aria-hidden="true">♟</span>
+                    <span class="follower-number">18</span>
+                  </span>
+                  <span class="stat-label">Followers</span>
+                </div>
+              </div>
+
+              <a
+                class="profile-link"
+                href="https://github.com"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                View GitHub profile
+                <span aria-hidden="true">↗</span>
+              </a>
+            </article>
+          </template>
+
+          <!-- Your JS will generate more user cards here -->
+        </div>
+      </section>
+
+      <footer class="footer">
+        <span>BUILT FOR DEVELOPERS</span>
+        <span
+          >Powered by the GitHub API <span class="footer-accent">✳</span></span
+        >
+      </footer>
+    </main>
+    <script src="main.js"></script>
+  </body>
+</html>
